@@ -354,7 +354,6 @@ CTEST_IMPL_DIAG_POP()
 
 char *CTEST_DESCRIPTION_FORMAT(char *buf, size_t n, const char* const fmt, ...) {
     if (buf) {
-        buf[0] = '\0';
         va_list argp;
         va_start(argp, fmt);
         vsnprintf(buf, n, fmt, argp);
